@@ -6,7 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+
+
 
 @Controller
 public class ReviewController {
@@ -29,10 +30,6 @@ public class ReviewController {
 	}
 	
 	
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry
-          .addResourceHandler("/resources/**")
-          .addResourceLocations("/resources/"); 
-    }
+  
 
 }
