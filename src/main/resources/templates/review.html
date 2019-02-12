@@ -8,7 +8,7 @@
 	<h1>A Single Review</h1>
 	
 	<div th:each= "review: ${reviews}">		
-		 <img th:src="@{images/SDV.jpg}" />
+		 <img th:src="@{'/images/' + ${review.url} + '.jpg'}" />
 		<p th:text = "${review.title}"></p>
 		<p th:text = "${review.category}"></p>
 		<p th:text = "${review.content}"></p>
