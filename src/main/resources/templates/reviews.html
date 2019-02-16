@@ -6,9 +6,11 @@
 <body>	
 	<h1>Sarah's Top Five Video Games OF ALL TIME</h1>
 	<div th:each="review: ${reviews}">
+		<ul>
 		<li>
 		<a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a>
 		</li>
+		</ul>
 	</div>
 </body>
 </html>
